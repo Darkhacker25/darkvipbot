@@ -1,8 +1,9 @@
+import os
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes
 
 # 🔑 YAHAN APNI DETAILS DAALO
-BOT_TOKEN = "8642124237:AAFcULXgReezhcq6vZEKb3cH8Ce3mlb2aoA"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHANNEL_USERNAME = "@Darkhck_zone"   # force join ke liye
 CHANNEL_ID = -1003976428034  # private channel id (video storage)
 
